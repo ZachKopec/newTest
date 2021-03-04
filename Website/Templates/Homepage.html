@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Finger On The Pulse</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="static/css/styles.css">
+</head>
+
+<body>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-center" style="max-width:1500px">
+  <img class="w3-image" src="static/Images/Pulse2.jpg" alt="Me" width="800" height="50">
+  <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
+    <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">Finger On The Pulse</h1>
+    <h3 class="w3-hide-medium w3-hide-small">How Are You Doing?</h3>
+  </div>
+  
+ <!-- Navbar (placed at the bottom of the header image) Page Hrefs are local placeholders. Change to Relative once fully implemented -->
+ <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
+  <a href="Homepage.html" class="w3-bar-item w3-button">Tool</a>
+  <a href="https://public.tableau.com/profile/kinnari.patel7104#!/vizhome/PULSEREGULARORIRREGULAR/MAINPAGE" class="w3-bar-item w3-button">Tableau-Visualization</a>
+  <a href="https://github.com/Kinnaribadal/Final-Project/blob/main/Jupyter/machine_learning.ipynb" class="w3-bar-item w3-button">Model Information</a>
+  <a href="http://127.0.0.1:5000/multiple" class="w3-bar-item w3-button">D3 Visualizations</a>
+</div>
+</header>
+
+<!-- Navbar on small screens -->
+<div class="w3-center w3-light-grey w3-padding-16 w3-hide-large w3-hide-medium">
+<div class="w3-bar w3-light-grey">
+  <a href="Homepage.html" class="w3-bar-item w3-button">Tool</a>
+  <a href="https://public.tableau.com/profile/kinnari.patel7104#!/vizhome/PULSEREGULARORIRREGULAR/MAINPAGE" class="w3-bar-item w3-button">Tableau-Visualization</a>
+  <a href="https://github.com/Kinnaribadal/Final-Project/blob/main/Jupyter/machine_learning.ipynb" class="w3-bar-item w3-button">Model Information</a>
+  <a href="http://127.0.0.1:5000/multiple" class="w3-bar-item w3-button">D3 Visualizations</a>
+</div>
+</div>
+<!-- Page content -->
+<div class="w3-content w3-padding-large w3-margin-top" id="Tool">
+
+<!-- User Input For Information Section -->
+<div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" id="Query">
+  <h2 class="w3-center w3-blue">Irregular Pulse Tool</h2>
+  <hr>
+  <h3 class="w3-center">Utilize the tool below to help determine whether or not you could have an irregular pulse</h3>
+  <p class="w3-center">*Disclaimer: The tools of this site is to be used for reference only and is not medical advice!</p>
+
+  <form action="Results.html" method="GET">
+    <div class="w3-section">
+      <label>Gender</label>
+      <input class="w3-input w3-border" type="number" required name="Gender" placeholder="Male=0 Female=1" id="gender">
+    </div>
+    <div class="w3-section">
+      <label>Age</label>
+      <input class="w3-input w3-border" type="number" required name="Age" placeholder="How Old Are You?" id="age">
+    </div>
+    <div class="w3-section">
+      <label>Height</label>
+      <input class="w3-input w3-border" type="number" required name="Height" placeholder="Height In CM" id="heihgt">
+    </div>
+    <div class="w3-section">
+      <label>Weight</label>
+      <input class="w3-input w3-border" type="number" required name="Weight" placeholder="Weight In KG" id="weight">
+    </div>
+    <div class="w3-section">
+      <label>Caffeine (MG)</label>
+      <input class="w3-input w3-border" type="number" required name="Caffeine (MG)" placeholder="caffeine Intake In MG" id="caffeine">
+    </div>
+    <div class="w3-section">
+      <label>Systolic: Blood pressure mm Hg</label>
+      <input class="w3-input w3-border" type="number" required name="Systolic" placeholder="Normal is Below 120 mm Hg" id="blood">
+    </div>
+    <div class="w3-section">
+      <label>Direct HDL-Cholesterol (mg/dL)</label>
+      <input class="w3-input w3-border" type="number" required name="Cholesterol" placeholder="Normal Is Above 60 mg/dL" id="chol">
+    </div>
+    <div class="w3-section">
+      <label>Avg Drinks per Day</label>
+      <input class="w3-input w3-border" type="number" required name="Drinks" placeholder="How Many Drinks Do You Have In A Single Session" id="drink">
+    </div>
+    <div class="w3-section">
+      <label>Smoker?</label>
+      <input class="w3-input w3-border" type="number" required name="Smoker" placeholder="No=0 Yes=1" id="smoke">
+    </div>
+    <button onclick="store()" type="submit" value="Save" id="Save" class="w3-button w3-block w3-dark-grey">Submit</button>
+  </form><br>
+</div>
+
+
+  <!--More Info Holder-->
+  <div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" id="Information">
+    <p>Powered by <a href="https://cdn.theatlantic.com/thumbor/LfyfTHNgco_iQq3tYU9YiG3tmF4=/359x322:3254x1950/720x405/https://cdn.theatlantic.com/assets/media/img/mt/2019/05/RTX1D61Q/original.jpg" target="_blank" class="w3-hover-text-green">THE GRADUATES!</a></p>
+  </div>
+
+<!-- End page content -->
+</div>
+
+</body>
+</html>

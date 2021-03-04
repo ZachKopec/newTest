@@ -1,0 +1,12 @@
+﻿Variable Name,Variable Description,File Name
+RIAGENDR,Gender of the participant.,demographic
+RIDAGEYR,Age in years of the participant at the time of screening. Individuals 80 and over are topcoded at 80 years of age.,demographic
+DR1TCAFF,Caffeine (mg),diet
+DR1TALCO,Alcohol (gm),diet
+BMXWT,Weight (kg),examination
+BMXHT,Standing Height (cm),examination
+BPXPULS,Pulse regular or irregular?,examination
+LBDHDD,Direct HDL-Cholesterol (mg/dL),labs
+ALQ130,"In the past 12 months, on those days that {you/SP} drank alcoholic beverages, on the average, how many drinks did {you/he/she} have?",questionnaire
+SMQ040,{Do you/Does SP} now smoke cigarettes?,questionnaire
+BPXSY1,Systolic: Blood pressure (first reading) mm Hg,examination
